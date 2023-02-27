@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&family=Yeon+Sung&display=swap');
+
+body {
+  background-color: #c0defe;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Namum pen Script";
+  min-height: 100vh;
+  margin: 0px;
+}
+
+@media (min-width: 650px) {
+  .App{
+    width: 640px;
+  }
+}
+
+@media (max-width: 650px) {
+  .App{
+    width: 90vw;
+  }
+}
+
+#root {
+  background-color: #f7fbff;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.App {
+  min-height: 100vh;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.header a:link{
+  color: black;
+  text-decoration: none;
+}
+.header a:visited{
+  color: black;
+  text-decoration: none;
+}
+
+/* List */
+.BlogList{
+  border: 1px solid grey;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+
+/* Item */
+
+.BlogItem{
+  background-color: rgb(240,240,240);
+  margin-bottom: 10px;
+  padding:20px;
+}
+
+.BlogItem .info{
+  border-bottom: 1px solid gray;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+.BlogItem .date{
+  color: gray;
+}
+
+.BlogItem .content{
+  font-weight: bold;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
+/* editor(게시글작성) */
+
+.BlogEditor{
+  border:1px solid grey;
+  text-align: center;
+  padding: 20px;
+}
+
+.BlogEditor input,
+textarea{
+  margin-bottom:20px;
+  width:500px;
+  padding: 10px
+}
+.BlogEditor textarea{
+  height: 150px;
+}
+.BlogEditor select{
+  width: 300px;
+  padding: 10px;
+  margin-bottom: 20px;
+
+}
+.BlogEditor button{
+  width:500px;
+  padding:10px;
+  cursor:pointer;
+}
